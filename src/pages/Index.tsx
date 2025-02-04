@@ -87,8 +87,7 @@ const Index = () => {
             Welcome to Japanese Café
           </h1>
           <p className="text-xl text-wood-700 max-w-2xl mx-auto">
-            A community where Japanese language enthusiasts and native speakers meet,
-            share experiences, and create lasting friendships at Copenhagen University.
+            Test
           </p>
         </motion.div>
 
