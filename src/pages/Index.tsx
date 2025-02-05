@@ -174,7 +174,7 @@ const Index = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="h-[200px]" // Adjusts the height of each item
+                  className="h-[50px]" // Adjusts the height of each item
                 >
                   <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
