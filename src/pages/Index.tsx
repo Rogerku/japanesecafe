@@ -60,9 +60,9 @@ const Index = () => {
       className: "row-span-2 col-span-2",
     },
     {
-      src: "/3.jpg",
+      src: "/7.jpg",
       alt: "",
-      className: "col-span-1",
+      className: "row-span-2 col-span-2",
     },
     {
       src: "/2.png",
@@ -83,11 +83,6 @@ const Index = () => {
       src: "/6.jpg",
       alt: "",
       className: "col-span-1",
-    },
-    {
-      src: "/7.jpg",
-      alt: "",
-      className: "row-span-2 col-span-2",
     },
   ];
 
