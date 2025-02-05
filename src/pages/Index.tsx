@@ -56,13 +56,38 @@ const Index = () => {
   const images = [
     {
       src: "/1.png",
-      alt: "Community members gathering",
+      alt: "",
       className: "row-span-2 col-span-2",
     },
     {
-      src: "/2.png",
-      alt: "Cozy café atmosphere",
+      src: "/3.jpg",
+      alt: "",
       className: "col-span-1",
+    },
+    {
+      src: "/2.png",
+      alt: "",
+      className: "row-span-2 col-span-2",
+    },
+    {
+      src: "/4.jpg",
+      alt: "",
+      className: "col-span-1",
+    },
+    {
+      src: "/5.jpg",
+      alt: "",
+      className: "row-span-2 col-span-2",
+    },
+    {
+      src: "/6.jpg",
+      alt: "",
+      className: "col-span-1",
+    },
+    {
+      src: "/7.jpg",
+      alt: "",
+      className: "row-span-2 col-span-2",
     },
   ];
 
@@ -138,7 +163,7 @@ const Index = () => {
               <img
                 src="./3.png"
                 alt="South Campus Building"
-                className="w-full h-[280px] object-cover"
+                className="w-full h-[270px] object-cover"
               />
             </motion.div>
           </div>
