@@ -25,31 +25,31 @@ const Index = () => {
   const volunteers = [
     {
       name: "Karina Jørgensen",
-      description: "Japanese studies",
+      description: "",
     },
     {
       name: "Rebecca Larsen",
-      description: "Japanese studies",
+      description: "",
     },
     {
       name: "Roger Wan Bengini",
-      description: "Computer Science studies",
+      description: "",
     },
     {
       name: "Pernille Cecilie Gundorff",
-      description: "Japanese studies",
+      description: "",
     },
     {
       name: "Benjamin Højgaard",
-      description: "Japanese studies",
+      description: "",
     },
     {
       name: "Frederik Hauschildt",
-      description: "Japanese studies",
+      description: "",
     },
     {
       name: "Sarah Birch Jessen",
-      description: "Japanese studies",
+      description: "",
     },
   ];
 
@@ -174,7 +174,7 @@ const Index = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="h-[120px]" // Adjusts the height of each item
+                  className="h-[60px]" // Adjusts the height of each item
                 >
                   <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
