@@ -18,7 +18,7 @@ const Index = () => {
       date: "Every Thursday",
       time: "15:15 - 19:00",
       location: "South Campus",
-      description: "This semester, our venue has moved to KUA3, room 5B.1.xx, in the law building. You can reach it in three ways: walk across the skybridge from building 11A, enter through entrance 16, or use entrance 76 if coming from the metro.\n\n今学期、私たちの部屋は法学部の建物にある KUA3 の 5B.1.xx に移動しました。行き方は3つあります。建物 11A の渡り廊下を通るか、入口 16 から入るか、またはメトロから来る場合は入口 76 を使えます。",
+      description: "This semester, we’ve moved to a new room in KUA3—5B.1.xx in the law building. You can get there in a few ways: walk across the skybridge from building 11A, come in through entrance 16, or use entrance 76 if you're coming from the metro. Looking forward to seeing you there!\n\n今学期から、KUA3 の 5B.1.xx に引っ越しました。法学部の建物にあります。行き方は、建物 11A の渡り廊下を渡るか、入口 16 から入るか、メトロなら入口 76 を使うのが便利です。お待ちしてます！",
     },
   ];
 
@@ -73,7 +73,7 @@ const Index = () => {
             Welcome to Japanese Café
           </h1>
           <p className="text-xl text-wood-700 max-w-2xl mx-auto">
-            Test
+            Whether you're into language exchange or just want to meet cool people, come say hi!
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ const Index = () => {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
-          <ScrollArea className="h-[400px] rounded-lg border border-wood-200 bg-white p-4">
+          <ScrollArea className="h-[200px] rounded-lg border border-wood-200 bg-white p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {volunteers.map((volunteer, index) => (
                 <motion.div
