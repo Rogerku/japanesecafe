@@ -18,7 +18,7 @@ const Index = () => {
       date: "Every Thursday",
       time: "15:15 - 19:00",
       location: "South Campus",
-      description: "",
+      description: "We usually hang out, talk, play some games, and have fun making new friends (´｡• ᵕ •｡)",
     },
   ];
 
@@ -120,10 +120,10 @@ const Index = () => {
                   </p>
                   <div className="space-y-2 text-wood-600">
                     <p>
-                      <strong>Japanese:</strong> 今学期から、KUA3 の 5B.1.xx に引っ越しました。法学部の建物にあります。行き方は、建物 11A の渡り廊下を渡るか、入口 16 から入るか、メトロなら入口 76 を使うのが便利です。お待ちしてます！
+                      <strong>Japanese\n</strong> 今学期から、KUA3 の 5B.1.xx に引っ越しました。法学部の建物にあります。行き方は、建物 11A の渡り廊下を渡るか、入口 16 から入るか、メトロなら入口 76 を使うのが便利です。お待ちしてます！
                     </p>
                     <p>
-                      <strong>English:</strong> This semester, we’ve moved to a new room in KUA3—5B.1.xx in the law building. You can get there in a few ways: walk across the skybridge from building 11A, come in through entrance 16, or use entrance 76 if you're coming from the metro. Looking forward to seeing you there!
+                      <strong>English\n</strong> This semester, we’ve moved to a new room in KUA3—5B.1.xx in the law building. You can get there in a few ways: walk across the skybridge from building 11A, come in through entrance 16, or use entrance 76 if you're coming from the metro. Looking forward to seeing you there!
                     </p>
                   </div>
                 </div>
