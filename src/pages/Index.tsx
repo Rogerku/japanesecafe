@@ -55,6 +55,16 @@ const Index = () => {
 
   const images = [
     {
+      src: "/12.jpg",
+      alt: "",
+      className: "row-span-2 col-span-2",
+    },
+    {
+      src: "/13.jpg",
+      alt: "",
+      className: "row-span-2 col-span-2",
+    },
+    {
       src: "/1.png",
       alt: "",
       className: "row-span-2 col-span-2",
