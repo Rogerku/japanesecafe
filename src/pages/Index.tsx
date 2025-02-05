@@ -25,24 +25,31 @@ const Index = () => {
   const volunteers = [
     {
       name: "Karina Jørgensen",
+      description: "",
     },
     {
       name: "Rebecca Larsen",
+      description: "",
     },
     {
       name: "Roger Wan Bengini",
+      description: "",
     },
     {
       name: "Pernille Cecilie Gundorff",
+      description: "",
     },
     {
       name: "Benjamin Højgaard",
+      description: "",
     },
     {
       name: "Frederik Hauschildt",
+      description: "",
     },
     {
       name: "Sarah Birch Jessen",
+      description: "",
     },
   ];
 
@@ -134,7 +141,7 @@ const Index = () => {
               <img
                 src="./3.png"
                 alt="South Campus Building"
-                className="w-full h-[274px] object-cover"
+                className="w-full h-[275px] object-cover"
               />
             </motion.div>
           </div>
@@ -142,7 +149,7 @@ const Index = () => {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
-          <ScrollArea className="h-[50px] rounded-lg border border-wood-200 bg-white p-4">
+          <ScrollArea className="h-[400px] rounded-lg border border-wood-200 bg-white p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {volunteers.map((volunteer, index) => (
                 <motion.div
@@ -156,7 +163,6 @@ const Index = () => {
                       <CardTitle className="text-lg text-wood-900">{volunteer.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="font-medium text-sakura-600">{volunteer.role}</p>
                       <p className="text-wood-600 mt-2">{volunteer.description}</p>
                     </CardContent>
                   </Card>
