@@ -25,38 +25,24 @@ const Index = () => {
   const volunteers = [
     {
       name: "Karina Jørgensen",
-      role: "",
-      description: "",
     },
     {
       name: "Rebecca Larsen",
-      role: "",
-      description: "",
     },
     {
       name: "Roger Wan Bengini",
-      role: "Studies Computer Science at KU",
-      description: "Fluent Japanese speaker",
     },
     {
       name: "Pernille Cecilie Gundorff",
-      role: "",
-      description: "",
     },
     {
       name: "Benjamin Højgaard",
-      role: "",
-      description: "",
     },
     {
       name: "Frederik Hauschildt",
-      role: "",
-      description: "",
     },
     {
       name: "Sarah Birch Jessen",
-      role: "",
-      description: "",
     },
   ];
 
@@ -148,7 +134,7 @@ const Index = () => {
               <img
                 src="./3.png"
                 alt="South Campus Building"
-                className="w-full h-[270px] object-cover"
+                className="w-full h-[274px] object-cover"
               />
             </motion.div>
           </div>
