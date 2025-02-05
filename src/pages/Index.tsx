@@ -18,7 +18,7 @@ const Index = () => {
       date: "Every Thursday",
       time: "15:15 - 19:00",
       location: "South Campus",
-      description: "We usually hang out, talk, play some games, and have fun making new friends \(´｡• ᵕ •｡)/",
+      description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／",
     },
   ];
 
@@ -120,7 +120,6 @@ const Index = () => {
                   </p>
                   <div className="space-y-2 text-wood-600">
                     <p>
-                      <strong>English</strong> 
                       This semester, we’ve moved to a new room in KUA3—5B.1.xx in the law building. You can get there in a few ways: walk across the skybridge from building 11A, come in through entrance 16, or use entrance 76 if you're coming from the metro. Looking forward to seeing you there!
                     </p>
                   </div>
@@ -136,7 +135,7 @@ const Index = () => {
               <img
                 src="./3.png"
                 alt="South Campus Building"
-                className="w-full h-[275px] object-cover"
+                className="w-full h-[280px] object-cover"
               />
             </motion.div>
           </div>
