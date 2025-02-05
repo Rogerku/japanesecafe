@@ -120,13 +120,13 @@ const Index = () => {
                   </p>
                   <div className="space-y-2 text-wood-600">
                     <p>
-                      <strong>By Metro:</strong> Take M1 or M2 to Islands Brygge Station
+                      <strong>By Metro:</strong> Take M1 to Islands Brygge Station
                     </p>
                     <p>
                       <strong>By Bus:</strong> Lines 12, 33, or 250S to Karen Blixens Plads
                     </p>
                     <p>
-                      <strong>Walking:</strong> 10 minutes from Islands Brygge Station
+                      <strong>Walking:</strong> 5 minutes from Islands Brygge Station
                     </p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Index = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
           <ScrollArea className="h-[400px] rounded-lg border border-wood-200 bg-white p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {volunteers.map((volunteer, index) => (
                 <motion.div
                   key={index}
