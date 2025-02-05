@@ -100,7 +100,7 @@ const Index = () => {
             Welcome to Japanese Café
           </h1>
           <p className="text-xl text-wood-700 max-w-2xl mx-auto">
-            Whether you're into language exchange or just want to meet cool people, come say hi!
+            Whether you're into language exchange or just want to meet cool people, come say hi! o(≧◡≦)b
           </p>
         </motion.div>
 
