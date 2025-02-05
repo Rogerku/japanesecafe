@@ -174,8 +174,9 @@ const Index = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="h-[200px]" // Adjusts the height of each item
                 >
-                  <Card>
+                  <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
                       <CardTitle className="text-lg text-wood-900">{volunteer.name}</CardTitle>
                     </CardHeader>
@@ -188,6 +189,7 @@ const Index = () => {
             </div>
           </ScrollArea>
         </section>
+
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Memories</h2>
