@@ -167,14 +167,14 @@ const Index = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
           <ScrollArea className="h-[400px] rounded-lg border border-wood-200 bg-white p-4">
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
               {volunteers.map((volunteer, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="h-[50px]" // Adjusts the height of each item
+                  className="h-[120px]" // Adjusts the height of each item
                 >
                   <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
