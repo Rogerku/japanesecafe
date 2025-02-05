@@ -122,9 +122,6 @@ const Index = () => {
                     <p>
                       We’ve moved to KUA3, 5B.1.xx in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
                     </p>
-                    <p>
-                      Any questions? Message us on Instagram! Looking forward to seeing you there!
-                    </p>
                   </div>
                 </div>
               </div>
