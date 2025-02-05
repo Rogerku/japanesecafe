@@ -120,13 +120,10 @@ const Index = () => {
                   </p>
                   <div className="space-y-2 text-wood-600">
                     <p>
-                      This semester, we’ve moved to a new room in KUA3—5B.1.xx in the law building. You can get there in a few ways: 
+                      We’ve moved to KUA3, 5B.1.xx in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
                     </p>
                     <p>
-                      walk across the skybridge from building 11A, come in through entrance 16, or use entrance 76 if you're coming from the metro. 
-                    </p>
-                    <p>
-                      Looking forward to seeing you there!
+                      Any questions? Message us on Instagram! Looking forward to seeing you there!
                     </p>
                   </div>
                 </div>
