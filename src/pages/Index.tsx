@@ -25,31 +25,31 @@ const Index = () => {
   const volunteers = [
     {
       name: "Karina Jørgensen",
-      description: "",
+      description: "Japanese studies",
     },
     {
       name: "Rebecca Larsen",
-      description: "",
+      description: "Japanese studies",
     },
     {
       name: "Roger Wan Bengini",
-      description: "",
+      description: "Computer Science studies",
     },
     {
       name: "Pernille Cecilie Gundorff",
-      description: "",
+      description: "Japanese studies",
     },
     {
       name: "Benjamin Højgaard",
-      description: "",
+      description: "Japanese studies",
     },
     {
       name: "Frederik Hauschildt",
-      description: "",
+      description: "Japanese studies",
     },
     {
       name: "Sarah Birch Jessen",
-      description: "",
+      description: "Japanese studies",
     },
   ];
 
