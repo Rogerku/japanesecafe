@@ -6,13 +6,55 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 
+const CherryBlossom = ({ delay }: { delay: number }) => {
+  const randomX = Math.random() * 100;
+  const randomRotation = Math.random() * 360;
+  
+  return (
+    <motion.div
+      className="absolute"
+      initial={{ 
+        top: -20,
+        left: `${randomX}vw`,
+        rotate: 0,
+        scale: 0.5
+      }}
+      animate={{
+        top: "100vh",
+        left: [`${randomX}vw`, `${randomX + 20}vw`, `${randomX - 20}vw`],
+        rotate: [0, randomRotation, randomRotation * 2],
+        scale: [0.5, 1, 0.8]
+      }}
+      transition={{
+        duration: 8,
+        delay,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+      style={{
+        width: "20px",
+        height: "20px",
+      }}
+    >
+      <svg viewBox="0 0 24 24" className="fill-sakura-300">
+        <path d="M12 2C13.1 2 14 2.9 14 4C14 4.9 13.4 5.6 12.6 5.9C12.8 6.2 13 6.6 13.2 7H13.7C15.7 7 17.3 8.3 17.8 10H18C20.2 10 22 11.8 22 14C22 16.2 20.2 18 18 18H16C15.7 18 15.4 17.9 15.1 17.7C14.6 17.3 13.9 17 13 17C12.1 17 11.4 17.3 10.9 17.7C10.6 17.9 10.3 18 10 18H6C3.8 18 2 16.2 2 14C2 11.8 3.8 10 6 10H6.2C6.7 8.3 8.3 7 10.3 7H10.8C11 6.6 11.2 6.2 11.4 5.9C10.6 5.6 10 4.9 10 4C10 2.9 10.9 2 12 2Z"/>
+      </svg>
+    </motion.div>
+  );
+};
+
 const Index = () => {
   const [showMap, setShowMap] = useState(false);
 
   useEffect(() => {
-    document.title = "Japanese Café";
+    document.title = "Japanese Café Club";
   }, []);
 
+  // Cherry blossoms array with different delays
+  const cherryBlossoms = Array.from({ length: 10 }, (_, i) => ({
+    id: i,
+    delay: i * 0.5
+  }));
   const upcomingEvents = [
     {
       title: "Weekly Language Exchange",
