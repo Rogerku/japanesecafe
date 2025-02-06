@@ -208,9 +208,9 @@ const Index = () => {
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <img
-                        src="/3.png,campus"
+                        src="/3.png"
                         alt="South Campus"
-                        className="w-full h-[300px] object-cover rounded-lg"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                       <p className="text-wood-600 text-sm mt-2 text-center flex items-center justify-center gap-2">
                         <span>Click to show directions</span>
@@ -233,7 +233,7 @@ const Index = () => {
               className="rounded-lg overflow-hidden shadow-md"
             >
               <video 
-                className="w-full h-[300px] object-cover"
+                className="w-full h-full object-cover"
                 autoPlay 
                 muted 
                 loop 
