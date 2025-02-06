@@ -95,6 +95,10 @@ const Index = () => {
       className: "row-span-2 col-span-2",
     },
   ];
+  
+  const toggleMap = () => {
+    setShowMap(!showMap);
+  };
 
   return (
     <div className="min-h-screen bg-wood-50">
