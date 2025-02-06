@@ -144,21 +144,37 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-wood-50">
+    <div className="min-h-screen bg-wood-50 overflow-hidden">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-6 py-8 relative">
+        {/* Cherry Blossoms */}
+        {cherryBlossoms.map((blossom) => (
+          <CherryBlossom key={blossom.id} delay={blossom.delay} />
+        ))}
+
+        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center mb-12 relative z-10"
         >
-          <h1 className="text-4xl font-bold text-wood-900 mb-4">
-            Welcome to Japanese Café
-          </h1>
-          <p className="text-xl text-wood-700 max-w-2xl mx-auto">
+          <motion.h1 
+            className="text-4xl font-bold text-wood-900 mb-4"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            Welcome to Japanese Café Club
+          </motion.h1>
+          <motion.p 
+            className="text-xl text-wood-700 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
             Whether you're into language exchange or just want to meet cool people, come say hi! (≧◡≦)b
-          </p>
+          </motion.p>
         </motion.div>
 
         <section className="mb-12">
@@ -176,7 +192,6 @@ const Index = () => {
             ))}
           </div>
         </section>
-
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">How to Find Us</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
