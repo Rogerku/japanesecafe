@@ -180,7 +180,7 @@ const Index = () => {
                         </p>
                         <div className="space-y-2 text-wood-600">
                         <p>
-                          We’ve moved to KUA3, 5B.1.xx in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
+                          We’ve moved to KUA3, 5B.1.08 in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
                         </p>
                         <p>
                           Any questions? Message us on Instagram! (´｡• ω •｡)
@@ -208,7 +208,7 @@ const Index = () => {
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <img
-                        src="/3.jpg"
+                        src="/3.png"
                         alt="South Campus"
                         className="w-full h-full object-cover rounded-lg"
                       />
