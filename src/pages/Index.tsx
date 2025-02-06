@@ -47,7 +47,7 @@ const Index = () => {
   const [showMap, setShowMap] = useState(false);
 
   useEffect(() => {
-    document.title = "Japanese Café Club";
+    document.title = "Japanese Café";
   }, []);
 
   // Cherry blossoms array with different delays
@@ -61,7 +61,7 @@ const Index = () => {
       date: "Every Thursday",
       time: "15:15 - 19:00",
       location: "South Campus",
-      description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／",
+      description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／\n There will also be free snacks, tea, and coffee!",
     },
   ];
 
