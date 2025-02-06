@@ -110,7 +110,7 @@ const Index = () => {
             Welcome to Japanese Café
           </h1>
           <p className="text-xl text-wood-700 max-w-2xl mx-auto">
-            Whether you're into language exchange or just want to meet cool people, come say hi! o(≧◡≦)b
+            Whether you're into language exchange or just want to meet cool people, come say hi! (≧◡≦)b
           </p>
         </motion.div>
 
@@ -184,7 +184,7 @@ const Index = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="h-[80px]" // Adjusts the height of each item
+                  className="h-full" // Adjusts the height of each item
                 >
                   <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
