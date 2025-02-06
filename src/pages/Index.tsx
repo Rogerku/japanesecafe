@@ -213,8 +213,8 @@ const Index = () => {
                 }}
                 transition={{
                   duration: 0.4,
-                  type: "spring",
-                  stiffness: 100
+                  type: "tween",
+                  ease: "easeOut"  // or any other easing function like "easeIn", "linear", etc.
                 }}
               >
                 <AnimatePresence mode="wait">
