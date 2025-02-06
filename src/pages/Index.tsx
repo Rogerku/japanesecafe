@@ -214,7 +214,7 @@ const Index = () => {
                 transition={{
                   duration: 0.6,
                   type: "spring",
-                  stiffness: 300
+                  stiffness: 0
                 }}
               >
                 <AnimatePresence mode="wait">
