@@ -208,7 +208,7 @@ const Index = () => {
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <img
-                        src="/3.jpg,campus"
+                        src="/3.png,campus"
                         alt="South Campus"
                         className="w-full h-[300px] object-cover rounded-lg"
                       />
@@ -239,7 +239,7 @@ const Index = () => {
                 loop 
                 playsInline
               >
-                <source src="guidevideo" type="video/mp4" />
+                <source src="/guidevideo" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>
