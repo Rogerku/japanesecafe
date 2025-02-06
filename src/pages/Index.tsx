@@ -165,7 +165,7 @@ const Index = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Welcome to Japanese Café Club
+            Welcome to Japanese Café
           </motion.h1>
           <motion.p 
             className="text-xl text-wood-700 max-w-2xl mx-auto"
