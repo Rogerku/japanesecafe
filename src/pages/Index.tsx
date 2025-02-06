@@ -211,6 +211,11 @@ const Index = () => {
                   rotateY: showMap ? 180 : 0,
                   zIndex: showMap ? 10 : 1
                 }}
+                transition={{
+                  duration: 0.1,
+                  type: "spring",
+                  stiffness: 100
+                }}
               >
                 <AnimatePresence mode="wait">
                   {!showMap ? (
