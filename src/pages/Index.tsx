@@ -238,7 +238,7 @@ const Index = () => {
                 loop 
                 playsInline
               >
-                <source src="https://player.vimeo.com/external/492094335.sd.mp4?s=8c92dbe7b4c2f2f3c4176a0d7d2844b2e1601ef6&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
+                <source src="guidevideo" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>
