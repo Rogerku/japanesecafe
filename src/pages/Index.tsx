@@ -212,9 +212,9 @@ const Index = () => {
                   zIndex: showMap ? 10 : 1
                 }}
                 transition={{
-                  duration: 0.4,
-                  type: "tween",
-                  ease: "easeOut"  // or any other easing function like "easeIn", "linear", etc.
+                  duration: 0.6,
+                  type: "spring",
+                  stiffness: 300
                 }}
               >
                 <AnimatePresence mode="wait">
