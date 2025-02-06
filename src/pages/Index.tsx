@@ -212,7 +212,7 @@ const Index = () => {
                   zIndex: showMap ? 10 : 1
                 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                   type: "spring",
                   stiffness: 100
                 }}
