@@ -6,8 +6,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 
-
 const Index = () => {
+  const [showMap, setShowMap] = useState(false);
+
   useEffect(() => {
     document.title = "Japanese Café";
   }, []);
