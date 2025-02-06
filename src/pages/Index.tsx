@@ -208,7 +208,7 @@ const Index = () => {
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <img
-                        src="/3.png"
+                        src="/3.jpg"
                         alt="South Campus"
                         className="w-full h-full object-cover rounded-lg"
                       />
