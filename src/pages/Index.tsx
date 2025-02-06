@@ -239,7 +239,7 @@ const Index = () => {
                 loop 
                 playsInline
               >
-                <source src="/guidevideo" type="video/mp4" />
+                <source src="/guidevideo.mp4" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>
