@@ -307,7 +307,7 @@ const Index = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
           <ScrollArea className="h-[400px] rounded-lg border border-wood-200 bg-white p-4">
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
               {volunteers.map((volunteer, index) => (
                 <motion.div
                   key={index}
