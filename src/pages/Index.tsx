@@ -224,7 +224,7 @@ const Index = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0 }}
+                      transition={{ duration: 0.2 }}
                       className="flex items-start space-x-4"
                     >
                       <MapPin className="w-6 h-6 text-sakura-600 mt-1 animate-bounce" />
@@ -260,7 +260,7 @@ const Index = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0 }}
+                      transition={{ duration: 0.2 }}
                       className="h-full"
                       style={{ transform: "rotateY(180deg)" }}
                     >
