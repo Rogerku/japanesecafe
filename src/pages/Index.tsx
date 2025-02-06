@@ -318,7 +318,7 @@ const Index = () => {
                 >
                   <Card className="h-full"> {/* Ensure card takes up full height of parent */}
                     <CardHeader>
-                      <CardTitle className="text-lg text-wood-900">{volunteer.name}</CardTitle>
+                      <CardTitle className="text-2xl text-wood-900">{volunteer.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-wood-600 mt-2">{volunteer.description}</p>
