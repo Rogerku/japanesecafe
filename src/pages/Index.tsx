@@ -212,9 +212,9 @@ const Index = () => {
                   zIndex: showMap ? 10 : 1
                 }}
                 transition={{
-                  duration: 0.1,
+                  duration: 0.4,
                   type: "spring",
-                  stiffness: 100
+                  stiffness: 50
                 }}
               >
                 <AnimatePresence mode="wait">
@@ -224,7 +224,7 @@ const Index = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0 }}
                       className="flex items-start space-x-4"
                     >
                       <MapPin className="w-6 h-6 text-sakura-600 mt-1 animate-bounce" />
