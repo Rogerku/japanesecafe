@@ -165,11 +165,16 @@ const Index = () => {
               transition={{ duration: 0.5 }}
               className="rounded-lg overflow-hidden shadow-md"
             >
-              <img
-                src="./3.png"
-                alt="South Campus Building"
-                className="w-full h-[270px] object-cover"
-              />
+              <video 
+                className="w-full h-[300px] object-cover"
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+              >
+                <source src="guidevideo" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </motion.div>
           </div>
         </section>
