@@ -137,27 +137,89 @@ const Index = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-lg p-6 shadow-md"
+              className="relative"
+              style={{ perspective: "1000px" }}
             >
-              <div className="flex items-start space-x-4 mb-4">
-                <MapPin className="w-6 h-6 text-sakura-600 mt-1" />
-                <div>
-                  <h3 className="text-lg font-semibold text-wood-900 mb-2">South Campus</h3>
-                  <p className="text-wood-700 mb-4">
-                    Karen Blixens Plads 8<br />
-                    2300 København S<br />
-                    Building KUA3, Room 5B.1.xx
-                  </p>
-                  <div className="space-y-2 text-wood-600">
-                    <p>
-                      We’ve moved to KUA3, 5B.1.xx in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
-                    </p>
-                    <p>
-                      Any questions? Message us on Instagram! (´｡• ω •｡)
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <motion.div
+                className={`bg-white rounded-lg p-6 shadow-lg cursor-pointer 
+                  ${!showMap ? 'hover:shadow-xl hover:-translate-y-1' : ''}
+                  transition-all duration-300`}
+                onClick={toggleMap}
+                animate={{
+                  rotateY: showMap ? 180 : 0,
+                  zIndex: showMap ? 10 : 1
+                }}
+                transition={{
+                  duration: 0.6,
+                  type: "spring",
+                  stiffness: 100
+                }}
+              >
+                <AnimatePresence mode="wait">
+                  {!showMap ? (
+                    <motion.div
+                      key="directions"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex items-start space-x-4"
+                    >
+                      <MapPin className="w-6 h-6 text-sakura-600 mt-1 animate-bounce" />
+                      <div>
+                        <h3 className="text-lg font-semibold text-wood-900 mb-2">South Campus</h3>
+                        <p className="text-wood-700 mb-4">
+                          Karen Blixens Plads 8<br />
+                          2300 København S<br />
+                          Building KUA3, Room 5B.1.08
+                        </p>
+                        <div className="space-y-2 text-wood-600">
+                        <p>
+                          We’ve moved to KUA3, 5B.1.xx in the law building. Access via skybridge from 11A, entrance 16, or entrance 76 from the metro.
+                        </p>
+                        <p>
+                          Any questions? Message us on Instagram! (´｡• ω •｡)
+                        </p>
+                        </div>
+                        <div className="mt-4 text-sakura-600 text-sm flex items-center gap-2">
+                          <span>Click to see location</span>
+                          <motion.div
+                            animate={{ x: [0, 5, 0] }}
+                            transition={{ repeat: Infinity, duration: 1.5 }}
+                          >
+                            →
+                          </motion.div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="image"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="h-full"
+                      style={{ transform: "rotateY(180deg)" }}
+                    >
+                      <img
+                        src="/3.jpg,campus"
+                        alt="South Campus"
+                        className="w-full h-[300px] object-cover rounded-lg"
+                      />
+                      <p className="text-wood-600 text-sm mt-2 text-center flex items-center justify-center gap-2">
+                        <span>Click to show directions</span>
+                        <motion.div
+                          animate={{ x: [0, -5, 0] }}
+                          transition={{ repeat: Infinity, duration: 1.5 }}
+                        >
+                          ←
+                        </motion.div>
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -172,12 +234,13 @@ const Index = () => {
                 loop 
                 playsInline
               >
-                <source src="/guidevideo" type="video/mp4" />
+                <source src="https://player.vimeo.com/external/492094335.sd.mp4?s=8c92dbe7b4c2f2f3c4176a0d7d2844b2e1601ef6&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>
           </div>
         </section>
+      
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Our Volunteers</h2>
