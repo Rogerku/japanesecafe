@@ -233,7 +233,7 @@ const Index = () => {
               className="rounded-lg overflow-hidden shadow-md"
             >
               <video 
-                className="w-[600px] h-[600px] object-cover"
+                className="w-[600px] h-[400px] object-cover"
                 autoPlay 
                 muted 
                 loop 
