@@ -64,7 +64,9 @@ const Index = () => {
       description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／\n There will also be free snacks, tea, and coffee!",
     },
   ];
-
+  const eventInfo = {
+    message: "Have an idea for an event? Feel free to contact us!",
+  };
   const volunteers = [
     {
       name: "Karina Jørgensen",
