@@ -64,9 +64,6 @@ const Index = () => {
       description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／\n There will also be free snacks, tea, and coffee!",
     },
   ];
-  const eventInfo = {
-    message: "Have an idea for an event? Feel free to contact us!",
-  };
   const volunteers = [
     {
       name: "Karina Jørgensen",
@@ -177,6 +174,27 @@ const Index = () => {
           >
             Whether you're into language exchange or just want to meet cool people, come say hi! (≧◡≦)b
           </motion.p>
+      </div>
+      <div className="mt-10 text-center border-t border-gray-300 pt-6">
+        <h3 className="text-xl font-semibold text-wood-900 mb-2">Have an idea for an event?</h3>
+        <p className="text-gray-700">Feel free to contact us on Instagram!</p>
+        <a
+          href="https://www.instagram.com/officialkujapanesecafe/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4"
+        >
+          <motion.img
+            src="/path-to-instagram-logo.png" // replace with your Instagram logo path
+            alt="Instagram Logo"
+            className="w-12 h-12 mx-auto cursor-pointer"
+            initial={{ opacity: 0.7 }}
+            animate={{ opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          />
+        </a>
+      </div>
         </motion.div>
 
         <section className="mb-12">
@@ -192,10 +210,6 @@ const Index = () => {
                 <EventCard {...event} />
               </motion.div>
             ))}
-          </div>
-          <div className="mt-10 text-center border-t border-gray-300 pt-6">
-            <h3 className="text-xl font-semibold text-wood-900 mb-2">Have an idea for an event?</h3>
-            <p className="text-gray-700">Feel free to contact us with your suggestions!</p>
           </div>
         </section>
         <section className="mb-12">
