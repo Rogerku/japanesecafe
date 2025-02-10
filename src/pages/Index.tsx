@@ -61,7 +61,14 @@ const Index = () => {
       date: "Every Thursday",
       time: "15:15 - 19:00",
       location: "South Campus",
-      description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／\n There will also be free snacks, tea, and coffee!",
+      description: "We usually hang out, talk, play some games, and have fun making new friends ＼(´｡• ᵕ •｡)／\n There will be free snacks, tea, and coffee!",
+    },
+    {
+      title: "Fastelavn",
+      date: "27/2",
+      time: "15:15 - 19:00",
+      location: "South Campus",
+      description: "Dress up and enjoy fastelavnsboller! Come for the fun, games, and sweet treats! (*^ ω ^)",
     },
   ];
   const volunteers = [
