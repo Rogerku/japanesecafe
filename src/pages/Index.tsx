@@ -196,6 +196,7 @@ const Index = () => {
                 <EventCard {...event} />
               </motion.div>
             ))}
+          </div>
           <div className="mt-10 text-center border-t border-gray-300 pt-6">
           <h3 className="text-xl font-semibold text-wood-900 mb-2">Have an idea for an event?</h3>
           <p className="text-gray-700">Feel free to contact us on Instagram!</p>
