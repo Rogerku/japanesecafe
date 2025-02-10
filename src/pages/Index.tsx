@@ -181,7 +181,6 @@ const Index = () => {
           >
             Whether you're into language exchange or just want to meet cool people, come say hi! (≧◡≦)b
           </motion.p>
-      </div>
         </motion.div>
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-wood-900 mb-6">Upcoming Events</h2>
